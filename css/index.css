@@ -1,0 +1,123 @@
+::-webkit-scrollbar {display:none}
+
+body{
+    margin: 0px;
+    -moz-user-select:none; /* Firefox私有属性 */
+    -webkit-user-select:none; /* WebKit内核私有属性 */
+    -ms-user-select:none; /* IE私有属性(IE10及以后) */
+    -khtml-user-select:none; /* KHTML内核私有属性 */
+    -o-user-select:none; /* Opera私有属性 */
+    user-select:none; /* CSS3属性 */
+    background-image:url('../img/background.png');
+}
+div{
+    margin: 0px;
+    text-align: center;
+}
+.header{
+    height: 250px;
+}
+
+.footer{
+    background-color: pink;
+}
+.logo{
+    height: 160px;
+}
+.logo img{
+    margin-top: 30px;
+    height: 90px;
+}
+.search{
+    font-size: 0;
+}
+.search div{
+    display: inline;
+    position:relative; 
+    top: -4px;
+}
+
+input[type=text]{
+    width: 510px;
+    height: 37px;
+    border: 0px;
+    outline: none;
+    background: white;
+    font-size: 15px;
+    border:1.5px solid skyblue;
+    border-radius:25px;
+    -moz-border-radius:25px; /* Old Firefox */
+    margin: 0 auto;
+}
+input[type=submit]{
+    width: 90px;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    border:2px solid;
+    background: #2d78f4;
+    border-radius:25px;
+    -moz-border-radius:25px; /* Old Firefox */
+    margin: 0 auto;
+
+    -webkit-appearance: none;
+}
+
+.content .daohang{
+    height: 500px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list{
+    width: 756px;
+}
+.list>div{
+    display: inline-block;
+}
+.list .type{
+    width: 55px;
+    float: left;
+    border-right: 2px solid rgb(128, 125, 125);
+}
+.list:nth-child(odd){
+    background-color: rgba(216, 216, 221, 0.925);
+}
+.list>.hang>div{
+    font-size: 15px;
+    display: inline-block;
+    margin-right: -5px;
+    width: 100px;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+}
+.list.hang{
+    margin-right: -5px;
+}
+.list a{
+    text-decoration: none;
+    color: gray;
+}
+.list a:hover{
+    color: #537CEA;
+}
+.more{
+    width: 60px;
+    text-align: center;
+}
+.content .type{
+    font-size: 17px;
+    width: 80px;
+    text-align: center;
+    line-height: 50px;
+}
+.footer{
+    font-size: 20px;
+}
+.friend{
+    width: 75px;
+}
