@@ -68,12 +68,12 @@ input[type=submit]{
 }
 
 .content .daohang{
-    width: 810px;
+    width: 870px;
     margin-left: auto;
     margin-right: auto;
 }
 .list{
-    width: 810px;
+    width: 870px;
 }
 .list>div{
     display: inline-block;
@@ -96,7 +96,7 @@ input[type=submit]{
     font-size: 15px;
     display: inline-block;
     margin-right: -5px;
-    width: 110px;
+    width: 120px;
     height: 50px;
     text-align: left;
     line-height: 50px;
@@ -105,8 +105,13 @@ input[type=submit]{
     margin-right: -5px;
 }
 .list a{
+    height: 50px;
     text-decoration: none;
     color: rgb(41, 38, 38);
+}
+.list a img{
+    margin-bottom: -5px;
+    height: 22px;
 }
 .list a:hover{
     color: #537CEA;
