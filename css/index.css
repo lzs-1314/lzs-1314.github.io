@@ -49,6 +49,7 @@ input[type=text]{
     -moz-border-radius:25px; /* Old Firefox */
     margin: 0 auto;
     opacity:0.7;
+    text-indent: 1em;
 }
 input[type=submit]{
     width: 90px;
