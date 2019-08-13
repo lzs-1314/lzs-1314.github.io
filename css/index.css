@@ -79,6 +79,7 @@ input[type=submit]{
     background-color: #FDFDFD;
     border-radius: 5px;
     padding: 10px 100px 10px 100px;
+    outline: none;
 }
 .content .class li:nth-child(1){
     background-color: rgb(215, 230, 185);
