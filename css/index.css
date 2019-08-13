@@ -1,3 +1,7 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0;
+}
 ::-webkit-scrollbar {display:none}
 
 body{
@@ -18,9 +22,6 @@ div{
     height: 250px;
 }
 
-.footer{
-    background-color: skyblue;
-}
 .logo{
     height: 160px;
 }
@@ -67,65 +68,134 @@ input[type=submit]{
 
     -webkit-appearance: none;
 }
-
-.content .daohang{
-    width: 870px;
-    margin-left: auto;
-    margin-right: auto;
+.content{
+    height: 600px;
 }
-.list{
-    width: 870px;
+.content .class{
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: #FDFDFD;
+    border-radius: 5px;
+    padding: 10px 100px 10px 100px;
 }
-.list>div{
-    display: inline-block;
+.content .class li:nth-child(1){
+    background-color: rgb(215, 230, 185);
 }
-.type{
-    width: 55px;
+.content .class li{
+    box-sizing: border-box;
+    list-style: none;
+    height: 40px;
+    width: 100px;
     float: left;
-    border-right: 2px solid rgb(128, 125, 125);
-    font-weight: 600;
+    background-color: #f7f1f1;
+    border: 1px solid #568bb9;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    outline: none;
 }
-.list:nth-child(odd){
+.content .class li:focus{
+    background: skyblue;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.content .class li:hover{
+    background: skyblue;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.content .class li:focus .box{
+    z-index: 2;
+    opacity: 1;
+}
+.content .class li .box{
+    box-sizing: border-box;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+    opacity: 0;
+    background-image:url('../img/background.png');
+}
+.content .class li:nth-child(1) .box{
+    left: -100px;
+    /* background-color: blue; */
+    z-index: 1;
+    opacity: 1;
+}
+.content .class li:nth-child(2) .box{
+    left: -200px;
+    /* background-color: rgb(118, 136, 225); */
+}
+.content .class li:nth-child(3) .box{
+    left: -300px;
+    /* background-color: rgb(225, 115, 143); */
+}
+.content .class li:nth-child(4) .box{
+    left: -400px;
+    /* background-color: rgb(214, 214, 131); */
+}
+.content .class li:nth-child(5) .box{
+    left: -500px;
+    /* background-color: pink; */
+}
+.content .class li:nth-child(6) .box{
+    left: -600px;
+    /* background-color: rgb(104, 196, 201); */
+}
+.content .class li .box .type:nth-child(odd){
+    height: 50px;
     background-color: rgba(216, 216, 221, 0.925);
     opacity:0.7;
 }
-.list:nth-child(even){
+.content .class li .box .type:nth-child(even){
+    height: 50px;
     background-color: rgba(235, 235, 236, 0.925);
     opacity:0.7;
 }
-.list>.hang>div{
-    font-size: 15px;
-    display: inline-block;
-    margin-right: -5px;
+.content .class li .box .type .web:nth-child(1){
+    box-sizing: border-box;
+    width: 78px;
+    border-right: 2px solid rgb(128, 125, 125);
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bolder;
+    color: rgb(0, 0, 7);
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+.content .class li .box .type .web{
+    box-sizing: border-box;
+    float: left;
+    text-indent: 5px;
     width: 120px;
     height: 50px;
     text-align: left;
-    line-height: 50px;
+    font-size: 16px;
 }
-.list.hang{
-    margin-right: -5px;
-}
-.list a{
+.content .class li .box .type .web a{
     height: 50px;
     text-decoration: none;
+    line-height: 50px;
     color: rgb(41, 38, 38);
+    opacity: 1;
 }
-.list a img{
+.content .class li .box .type .web a:hover{
+    color: #537CEA;
+}
+.content .class li .box .type .web a img{
     margin-bottom: -5px;
     height: 21px;
 }
-.list a:hover{
-    color: #537CEA;
-}
-.more{
-    width: 60px;
-    text-align: center;
-}
-.content .type{
-    font-size: 17px;
-    width: 80px;
-    text-align: center;
-    line-height: 50px;
+/* 底部 */
+.footer{
+    background-color: skyblue;
 }
 .footer{
     margin-top: 20px;
