@@ -65,7 +65,6 @@ input[type=submit]{
     border-radius:25px;
     -moz-border-radius:25px; /* Old Firefox */
     margin: 0 auto;
-
     -webkit-appearance: none;
 }
 .content{
@@ -78,7 +77,7 @@ input[type=submit]{
     margin-top: 5px;
     background-color: #FDFDFD;
     border-radius: 5px;
-    padding: 10px 100px 10px 100px;
+    padding: 10px 130px 10px 130px;
     outline: none;
 }
 .content .class li:nth-child(1){
@@ -98,55 +97,43 @@ input[type=submit]{
     position: relative;
     outline: none;
 }
-.content .class li:focus{
-    background: skyblue;
-    border: 1px solid #000;
-    border-radius: 5px;
-}
 .content .class li:hover{
     background: skyblue;
-    border: 1px solid #000;
-    border-radius: 5px;
 }
-.content .class li:focus .box{
-    z-index: 2;
-    opacity: 1;
-}
+
 .content .class li .box{
     box-sizing: border-box;
-    width: 800px;
+    width: 860px;
     height: 500px;
     margin: 0 auto;
     position: absolute;
     top: 50px;
     overflow: hidden;
-    opacity: 0;
     background-image:url('../img/background.png');
 }
 .content .class li:nth-child(1) .box{
-    left: -100px;
+    left: -130px;
     /* background-color: blue; */
     z-index: 1;
-    opacity: 1;
 }
 .content .class li:nth-child(2) .box{
-    left: -200px;
+    left: -230px;
     /* background-color: rgb(118, 136, 225); */
 }
 .content .class li:nth-child(3) .box{
-    left: -300px;
+    left: -330px;
     /* background-color: rgb(225, 115, 143); */
 }
 .content .class li:nth-child(4) .box{
-    left: -400px;
+    left: -430px;
     /* background-color: rgb(214, 214, 131); */
 }
 .content .class li:nth-child(5) .box{
-    left: -500px;
+    left: -530px;
     /* background-color: pink; */
 }
 .content .class li:nth-child(6) .box{
-    left: -600px;
+    left: -630px;
     /* background-color: rgb(104, 196, 201); */
 }
 .content .class li .box .type:nth-child(odd){
@@ -174,8 +161,8 @@ input[type=submit]{
 .content .class li .box .type .web{
     box-sizing: border-box;
     float: left;
-    text-indent: 5px;
-    width: 120px;
+    text-indent: 10px;
+    width: 130px;
     height: 50px;
     text-align: left;
     font-size: 16px;
