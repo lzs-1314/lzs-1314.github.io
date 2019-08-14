@@ -2055,9 +2055,18 @@
                         document.getElementById(m).style.zIndex = "1";
                         document.getElementById(m).style.backgroundColor = "#f7f1f1";
                     }
-                    
                 }
-			}
+            }
+            //禁用右键
+            document.oncontextmenu = function () { return false; };
+            //禁用开发者工具F12
+            document.onkeydown = function () {
+                if (window.event && window.event.keyCode == 123) {
+                    event.keyCode = 0;
+                    event.returnValue = false;
+                    return false;
+                }
+            };
         </script>
     </body>
 </html>
