@@ -59,7 +59,7 @@ input[type=submit]{
     color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
-
+    outline: none;
     border:2px solid;
     background: #2d78f4;
     border-radius:25px;
